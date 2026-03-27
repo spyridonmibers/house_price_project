@@ -25,7 +25,7 @@ st.markdown("Введите данные о доме или загрузите C
 @st.cache_resource
 def load_model():
     """Загрузка обученной модели CatBoost"""
-    model_path = "catboost_model.cbm"
+    model_path = "../catboost_model.cbm"
     
     if os.path.exists(model_path):
         try:
